@@ -1,2 +1,2 @@
 # xamarin-forms-capgemini
-Intro course to Xamarin.Forms 
+Project files for intro course to Xamarin.Forms 19.10.2016 @Capgemini.
