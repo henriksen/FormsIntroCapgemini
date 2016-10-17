@@ -21,7 +21,7 @@ namespace FormsIntro.Droid
         {
             if (!Resolver.IsSet)
             {
-                var kernel = new StandardKernel(new AndroidModule());
+                var kernel = new StandardKernel(new AndroidModule(), new SharedModule());
                 var resolver = new NinjectResolver(kernel);
                 Resolver.SetResolver(resolver);
             }
