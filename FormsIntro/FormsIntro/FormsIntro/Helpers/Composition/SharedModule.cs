@@ -12,6 +12,7 @@ namespace FormsIntro.Helpers.Composition
             Bind<IEventAggregator>().To<EventAggregator>().InSingletonScope();
             Bind<IDialogService>().To<DialogService>().InSingletonScope();
             Bind<INavigationHelper>().To<NavigationHelper>().InSingletonScope();
+            Bind<IViewFactoryHelper>().To<ViewFactoryHelper>().InSingletonScope();
         }
     }
 }
