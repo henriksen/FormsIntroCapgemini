@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using FormsIntro.Droid.Ioc;
 using FormsIntro.Helpers.Composition;
 using Ninject;
 using XLabs.Ioc;
@@ -18,12 +19,12 @@ namespace FormsIntro.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
-            //if (!Resolver.IsSet)
-            //{
-            //    var kernel = new StandardKernel(new SharedModule());
-            //    var resolver = new NinjectResolver(kernel);
-            //    Resolver.SetResolver(resolver);
-            //}
+            if (!Resolver.IsSet)
+            {
+                var kernel = new StandardKernel(new AndroidModule());
+                var resolver = new NinjectResolver(kernel);
+                Resolver.SetResolver(resolver);
+            }
 
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
