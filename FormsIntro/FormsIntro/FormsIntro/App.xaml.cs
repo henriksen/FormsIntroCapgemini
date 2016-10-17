@@ -12,6 +12,7 @@ namespace FormsIntro
         public App()
         {
             InitializeComponent();
+
             //ViewFactoryComposition.RegisterMappings();
 
             MainPage = new FormsIntro.MainPage();
