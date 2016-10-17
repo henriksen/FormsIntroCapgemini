@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using FormsIntro.Helpers.Composition;
 using Ninject;
 using XLabs.Ioc;
 using XLabs.Ioc.Ninject;
@@ -34,4 +35,3 @@ namespace FormsIntro.Droid
         }
     }
 }
-

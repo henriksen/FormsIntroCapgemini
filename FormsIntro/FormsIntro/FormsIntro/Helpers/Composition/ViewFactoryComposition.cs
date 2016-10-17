@@ -1,4 +1,4 @@
-﻿namespace FormsIntro.Helpers
+﻿namespace FormsIntro.Helpers.Composition
 {
     public class ViewFactoryComposition
     {

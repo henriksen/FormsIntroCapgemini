@@ -2,7 +2,7 @@
 
 namespace FormsIntro.Helpers.Navigation
 {
-    public class NavigationHelper
+    public class NavigationHelper : INavigationHelper
     {
         private NavigationPage CurrentNavigationPage => (Application.Current.MainPage as NavigationPage);
 

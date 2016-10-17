@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FormsIntro.Helpers.Composition;
 using Foundation;
 using Ninject;
 using UIKit;
