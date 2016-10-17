@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using FormsIntro.Helpers;
 using Xamarin.Forms;
 
 namespace FormsIntro
@@ -12,6 +12,7 @@ namespace FormsIntro
         public App()
         {
             InitializeComponent();
+            //ViewFactoryComposition.RegisterMappings();
 
             MainPage = new FormsIntro.MainPage();
         }
